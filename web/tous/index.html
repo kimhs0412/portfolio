@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUS les JOURS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="skip_nav">
+        <a href="#main">본문바로보기</a>
+      </div>
+    <div id="wrap">
+        <header id="header" class="clrfix">
+            <div class="container">
+                <h1><a href="#"><span class="blind">뚜레쥬르</span></a></h1>
+                <div class="util">
+                    <div class="allmenu_wrap">              
+                        <button class="allmenu"><span class="blind">전체메뉴</span></button>
+                        <div class="all">
+                            <ul class="a1">
+                                <li><a href="#">브랜드 스토리</a>
+                                    <ul class="a2">
+                                        <li><a href="#">브랜드 스토리</a></li>
+                                        <li><a href="#">뚜레쥬르 광고</a></li>
+                                        <li><a href="#">재료 이야기</a></li>
+                                        <li><a href="#">글로벌 뚜레쥬르</a></li>
+                                        <li><a href="#">뚜레쥬르 착한빵</a></li>
+                                        <li><a href="#">New 뚜레쥬르</a></li>
+                                        <li><a href="#">데일리 베이커리</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">제품 안내</a>
+                                    <ul class="a2">
+                                        <li><a href="#">신제품</a></li>
+                                        <li><a href="#">빵</a></li>
+                                        <li><a href="#">케이크</a></li>
+                                        <li><a href="#">델리</a></li>
+                                        <li><a href="#">선물</a></li>
+                                        <li><a href="#">디저트&스낵</a></li>
+                                        <li><a href="#">음료</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">새소식</a>
+                                    <ul class="a2">
+                                        <li><a href="#">뉴스</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">매장 안내</a>
+                                    <ul class="a2">
+                                        <li><a href="#">매장찾기</a></li>
+                                        <li><a href="#">라뜰리에 뚜레쥬르</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">이벤트&멤버십</a>
+                                    <ul class="a2">
+                                        <li><a href="#">진행중인 이벤트</a></li>
+                                        <li><a href="#">이벤트 당첨자</a></li>
+                                        <li><a href="#">CJ ONE 멤버십</a></li>
+                                        <li><a href="#">제휴 혜택</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">쇼핑몰&케이크</a>
+                                    <ul class="a2">
+                                        <li><a href="#">예약/픽업 서비스</a></li>
+                                        <li><a href="#">케이크 배달신청</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> <!--all-->
+                    </div> <!--allmenu_wrap-->
+                    <div class="search_wrap">
+                        <button class="search">
+                            <span class="blind">검색</span></button>                
+                    </div> <!--search_wrap-->
+                </div> <!--util-->
+                <ul id="gnb">
+                    <li><a href="#">브랜드 스토리</a>
+                        <ul class="g2">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">뚜레쥬르 광고</a></li>
+                            <li><a href="#">재료 이야기</a></li>
+                            <li><a href="#">글로벌 뚜레쥬르</a></li>
+                            <li><a href="#">뚜레쥬르 착한빵</a></li>
+                            <li><a href="#">New 뚜레쥬르</a></li>
+                            <li><a href="#">데일리 베이커리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">제품 안내</a>
+                        <ul class="g2">
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">빵</a></li>
+                            <li><a href="#">케이크</a></li>
+                            <li><a href="#">델리</a></li>
+                            <li><a href="#">선물</a></li>
+                            <li><a href="#">디저트&스낵</a></li>
+                            <li><a href="#">음료</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#">새소식</a>
+                        <ul class="g2">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="#">매장 안내</a>
+                        <ul class="g2">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">라뜰리에 뚜레쥬르</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이벤트&멤버십</a>
+                        <ul class="g2">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">이벤트 당첨자</a></li>
+                            <li><a href="#">CJ ONE 멤버십</a></li>
+                            <li><a href="#">제휴 혜택</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">쇼핑몰&케이크</a>
+                        <ul class="g2">
+                            <li><a href="#">예약/픽업 서비스</a></li>
+                            <li><a href="#">케이크 배달신청</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!--container01-->
+        </header>
+        <main id="main">           
+                <div class="visual_wrap">
+                    <!-- <img src="../img/1-10.jpg" alt=""> 
+                    <div class="visual_txt">
+                        <strong>건강한 데일리 베이커리</strong>
+                        <p>
+                            건강하지만 맛있어야, <br>
+                            맛있지만 건강해야, <br>
+                            매일 먹을 수 있다는 평범한 원칙으로부터 <br>
+                            뚜레쥬르의 오늘은 시작됩니다.
+                        </p>
+                    </div>--> <!--visual_txt-->
+                </div> <!--visual_wrap-->
+            
+            <div class="menu_wrap">
+                <div class="container">
+                    <h2>MENU</h2>
+                    <ul class="menu clrfix">
+                        <li class="menu1"><a href="#">
+                            <div class="menu_img"></div>
+                            <span>마담 얼그레이 크림번</span>
+                        </a></li>
+                        <li class="menu2"><a href="#">
+                            <div class="menu_img"></div>
+                            <span>앙버터 라우겐</span>
+                        </a></li>
+                        <li class="menu3"><a href="#">
+                            <div class="menu_img"></div>
+                            <span>밤식빵</span>
+                        </a></li>
+                        <li class="menu4"><a href="#">
+                            <div class="menu_img"></div>
+                            <span>TLJ옥수수식빵</span>
+                        </a></li>
+                        <li class="menu5"><a href="#">
+                            <div class="menu_img"></div>                   
+                            <span>순, 식빵</span>
+                        </a></li>
+                    </ul>
+                    <div class="menu_btns"></div>
+                </div> <!--container-->
+                <div class="menu_control">                   
+                    <button class="more"><span>더보기</span></button>
+                </div>
+            </div> <!--menu_wrap-->
+              
+            
+           <!--
+            <div class="store_wrap">
+                <div class="container">
+                    <h2>STORE</h2>  
+                </div>          
+            </div>
+        -->
+            
+            
+            <div class="event_wrap">
+                <div class="container">
+                    <h2>EVENT</h2>     
+                    
+                    <ul class="clrfix">
+                        <li>
+                            <a href="#">
+                                <div class="event_img"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="event_img"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="event_img"></div>
+                            </a>
+                        </li>
+                    </ul>               
+
+                    <!-- <ul>
+                        <li><a href="#"><img src="../img/event1.jfif" alt="홈메이드 스타일 스콘"></a></li>
+                        <li><a href="#"><img src="../img/event2.jpg" alt="주식빵 먹고, 해외주식 받자!"></a></li>
+                        <li><a href="#"><img src="../img/event3.jfif" alt="Buy 2, Get 1 for free"></a></li>
+                    </ul> -->
+                </div> <!--container-->
+                <div class="event_control">                     
+                    <button class="more"><span>더보기</span></button>
+                </div>
+            </div> <!--event_wrap-->
+           
+            <div class="notice_wrap clrfix">                    
+                <div class="container">
+                    <div class="notice">
+                        <a href="#">
+                        <div class="notice_img1"></div><!--notice_img1-->
+                        <!-- <img src="../img/foundation.jpg" alt="창업 안내"> -->
+                        <div class="box">
+                            <strong>창업 안내</strong>
+                            <p>
+                                20년 프랜차이즈 노하우와 함께 <br>
+                                긴 인생 든든하게 준비하세요.
+                            </p>
+                        </div>  <!--box-->
+                        </a>
+                    </div> <!--notice-->
+                    <div class="notice">
+                        <a href="#">
+                            <div class="notice_img2"></div><!--notice_img2-->
+                            <!-- <img src="../img/engineer.jpg" alt="기사 채용"> -->
+                            <div class="box">
+                                <strong>기사 채용 안내</strong>
+                                <p>
+                                    제과제빵의 꿈을 <br>
+                                    뚜레쥬르와 함께 하세요.
+                                </p>
+                            </div>  <!--box-->    
+                        </a>    
+                        
+                    </div> <!--notice-->
+                    <div class="notice">
+                        <a href="#">
+                        <div class="notice_img3"></div><!--notice_img3-->
+                        <!-- <img src="../img/cake.jpg" alt="쇼핑몰&케이크"> -->
+                        <div class="box">
+                            <strong>쇼핑몰&케이크</strong>
+                            <p>
+                                뚜레쥬르 제품을 온라인에서 <br>
+                                구매&배송신청 하세요.
+                            </p>
+                        </div> <!--box-->
+                        </a>
+                    </div> <!--notice-->
+                   
+                </div> <!--container-->
+            </div><!--notice_wrap-->
+            
+            <div class="insta_wrap">
+                <div class="container">
+                    <h2>INSTAGRAM</h2>
+                    
+                    <ul class="clrfix">
+                        <li>
+                            <a href="#">
+                                <div class="insta_img"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="insta_img"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="insta_img"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="insta_img"></div>
+                            </a>
+                        </li>
+                    </ul> 
+                    <!-- <ul>
+                        <li><a href="#"><img src="../img/insta1.JPG" alt="HAPPY NEW YEAR 티거 케이크"></a></li>
+                        <li><a href="#"><img src="../img/insta2.jfif" alt="인스타그램 오픈 기념 가정의 달 이벤트"></a></li>
+                        <li><a href="#"><img src="../img/insta3.jfif" alt="먹빵천재의 할인 클라쓰"></a></li>
+                        <li><a href="#"><img src="../img/insta4.jfif" alt="밀키스의 부드러움과 고소한 뚜쥬가 만났다"></a></li>
+                    </ul> -->
+                </div> <!--container-->
+                <div class="insta_control">                   
+                    <button class="more"><span>더보기</span></button>
+                </div>
+            </div><!--insta_wrap-->
+            <div class="news_wrap">
+                <div class="container">
+                    <h2>NEWS</h2>                    
+                    <ul class="clrfix">
+                        <li><a href="#">
+                            <div class="line"></div>
+                            <strong>2021년 크리스마스 <br>
+                                [사랑 뿜뿜 크리스마스! <br>
+                                나와 어울리는 쿠키는] 이벤트 당첨자 발표</strong>
+                            <span>2022-01-14</span>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="line"></div>
+                            <strong>CJ푸드빌 개인정보처리방침 개정 고지</strong>
+                            <span>2022-01-14</span>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="line"></div>
+                            <strong>2022년 신년 뚜레쥬르 티거 굿즈 <br>
+                                [티거_데코 스티커] 출시 안내</strong>
+                            <span>2022-01-04</span>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="line"></div>
+                            <strong>2021년 크리스마스 뚜레쥬르X쿠키런:킹덤 <br>
+                                콜라보 굿즈[오로라 머그] 출시 안내</strong>
+                            <span>2021-12-14</span>
+                        </a></li>
+                    </ul>
+                </div> <!--container-->
+            </div><!--news_wrap-->
+        </main>
+        <footer>
+            <div class="container">
+                <ul class="clrfix">
+                    <li class="pc"><a href="#">회사소개</a></li>
+                    <li class="pc"><a href="#">기사 채용안내</a></li>
+                    <li class="pc"><a href="#">이용약관</a></li>
+                    <li class="pc"><a href="#">위치기반서비스 이용약관</a></li>
+                    <li class="pc"><a href="#">창업안내</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li class="mo"><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+
+                <hr class="mo">
+
+                <p class="addr">
+                    상호명:CJ푸드빌(주) <br>
+                    주소:(우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&G을지로타워 3, 9-11층<br>
+                    CJ푸드빌㈜고객센터:1577-0700통신판매업종신고증 제 2011-서울중구-0771호사업자정보확인<br>
+                    호스팅제공자 : CJ올리브네트웍스(주) <br>
+                    사업자등록번호:312-81-42519대표이사:김찬호개인정보보호책임자:오창호 <br>
+                    대표 이메일:help_master@cj.net
+                </p>
+                <p>
+                    COPYRIGHT 2022&copy;CJ Foodville ALL RIGHT RESERVED.
+                </p>
+                <div class="fix_btns">
+                    
+                    <a href="#">
+                        <div class="btns_box"></div>
+                        <span>Top</span>
+                    </a>
+                  </div>
+            </div> <!--container-->
+        </footer>        
+    </div> <!--#wrap-->
+</body>
+</html>
