@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">    
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/main.css">
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <header>
-        <div class="header_wrap">           
+<div id="wrap">
+    <header class="clrfix">
+        <div class="header_wrap clrfix">           
             <div class="container clrfix">
-                <nav>
+                <nav class="clrfix">
                         <h1><a href="#">KIM HYUN SEONG</a></h1>
                         <div class="util_wrap">
                             <ul class="util clrfix">
@@ -30,19 +33,106 @@
                 </nav>
             </div> <!--container-->
         </div> <!--header_wrap-->
-        </header>
-        <main id="main">           
-            <div id="home_wrap">
-                <h2 class="blind">HOME</h2>
-                <div class="visual_wrap">
-                    <div class="intro_wrap">
-                        <p class="intro">
+    </header>
+    <main id="main">           
+        <div id="home_wrap">
+            <h2 class="blind">HOME</h2>
+            <div class="visual_wrap">
+                <!--cloud-->
+                <div class="frame">
+                        <div class="plane-container">
+                        <a href="http://customer.io/" target="_blank">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+                        xml:space="preserve" class="plane">
+                        <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  "/>
+                        <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   "/>
+                        </svg></a>
+                        
+                        </div>
+                        </div>
+                        <div class="clouds">
+                        
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
+                        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
+                        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                        </svg>
+                        
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
+                        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                        </svg>
+                        
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant super-slow massive">
+                        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                        </svg>
+                        
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                        height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud slower">
+                        <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+                        c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+                        C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+                        S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+                        </svg>
+                        
+                        </div>
+                        
+                    <!--cloud-->
+
+                    <div class="intro_wrap">                        
+                        <div class="textcontainer">
+                             <span class="particletext bubbles">안녕하세요!</span>
+                          </div>
+                          
+                          <div class="textcontainer">
+                             <span class="particletext confetti">신입 웹 퍼블리셔 </span>
+                          </div>
+                          
+                          <div class="textcontainer">
+                             <span class="particletext hearts">김현성</span>
+                          </div>
+                          
+                          <div class="textcontainer">
+                             <span class="particletext sunbeams">입니다!</span>
+                          </div>
+                     </div> <!--intro_wrap--> 
+
+
+                 
+                         
+                         <!-- <div class="textcontainer">
+                            <span class="particletext lines">Lines</span>
+                         </div> -->
+                         <!--<div class="textcontainer">
+                            <span class="particletext sunbeams">Beams?</span>
+                         </div>-->              
+                        
+                        
+                        
+                        <!-- <p class="intro">
                             안녕하세요! <br>
                             신입 웹 퍼블리셔 <br>
                             <span>김현성</span> <br>
                             입니다!
-                        </p>
-                    </div> <!--intro_wrap-->     
+                        </p> -->
+                        
                 </div><!--visual_wrap-->
             </div> <!--home_wrap-->
         <div id="about_wrap" class="clrfix">
@@ -99,107 +189,99 @@
         </div><!--skills_wrap-->
         <div id="portfolio_wrap">
             <div class="container">
-                <h2>PORTFOLIO</h2>
-                <h3>WEB</h3>
-                <ul class="web clrfix">
-                    <li class="tous">
-                        <a href="web/tous/index.html" target="_blank">
-                            <div class="portfolio_icon"></div>
-                            <span class="portfolio_txt">뚜레쥬르</span>
-                            <p>
-                                퍼블리싱 : 100% <br>
-                                제작기간 : 3달
-                            </p>
-                        </a>     
-                    </li>
-                    <li class="tous">
-                        <a href="web/tous/index.html" target="_blank">
-                            <div class="portfolio_icon"></div>
-                            <span class="portfolio_txt">뚜레쥬르</span>
-                        </a>     
-                    </li>
-                    <li class="tous">
-                        <a href="web/tous/index.html" target="_blank">
-                            <div class="portfolio_icon"></div>
-                            <span class="portfolio_txt">뚜레쥬르</span>
-                        </a>     
-                    </li>
-                    <li class="tous">
-                        <a href="web/tous/index.html" target="_blank">
-                            <div class="portfolio_icon"></div>
-                            <span class="portfolio_txt">뚜레쥬르</span>
-                        </a>     
-                    </li>
-                </ul>          
+                <h2 class="blind">PORTFOLIO</h2>
                 
-                <h3>GRAPHIC</h3>
-                <ul class="image clrfix">
-                    <li>
+                <ul class="tabs">
+                    <li class="on" data-filter="*">전체</li>
+                    <li data-filter=".t1">WEB</li>
+                    <li data-filter=".t2">GRAPHIC</li>
+                </ul>
+                <ul class="work_thumb clrfix">
+                    <li class="t1">
+                        <a href="web/tous/index.html" target="_blank">
+                            <div class="portfolio_icon"></div>
+                            <span class="portfolio_txt">뚜레쥬르</span>
+                            <div class="des_wrap">
+                                <div class="des_wrap2">
+                                    <p class="des">                                
+                                        퍼블리싱 : 100% <br>
+                                        제작기간 : 3달
+                                    </p>
+                                </div>
+                            </div>
+                        </a>     
+                    </li>                    
+                    <li class="t2">
                         <a href="design/port01.jpg" data-lightbox="images" data-title="포트폴리오1">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port02.jpg" data-lightbox="images" data-title="포트폴리오2">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port03.jpg" data-lightbox="images" data-title="포트폴리오3">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port04.jpg" data-lightbox="images" data-title="포트폴리오4">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port05.jpg" data-lightbox="images" data-title="포트폴리오5">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port06.jpg" data-lightbox="images" data-title="포트폴리오6">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port07.jpg" data-lightbox="images" data-title="포트폴리오7">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port08.jpg" data-lightbox="images" data-title="포트폴리오8">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port09.jpg" data-lightbox="images" data-title="포트폴리오9">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port10.jpg" data-lightbox="images" data-title="포트폴리오10">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port11.jpg" data-lightbox="images" data-title="포트폴리오11">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port12.jpg" data-lightbox="images" data-title="포트폴리오12">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                    <li>
+                    <li class="t2">
                         <a href="design/port13.jpg" data-lightbox="images" data-title="포트폴리오13">
                             <div class="image_icon"></div>
                         </a>
                     </li>
-                </ul> 
+                </ul>          
+                
+              
+                <!-- <ul class="image clrfix">
+                   
+                </ul>  -->
             </div> <!--container-->
         </div><!--portfolio_wrap-->
     </main>
