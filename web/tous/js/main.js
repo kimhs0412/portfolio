@@ -7,7 +7,18 @@ $(function() {
   }, function() {
     $('#gnb li .g2').hide();
     $('.gnb_bg').remove()
-  })
+  });
+
+  $('.allmenu_wrap .allmenu').click(function() {
+    $('.all').toggle();
+    
+  });
+
+  
+
+
+
+
 
   //menu
   $('.menu').slick({
@@ -25,6 +36,11 @@ $(function() {
     }]
   })
 
+  $('.fix_btns').click(function() {         
+    $('html, body').animate({
+      scrollTop : $('.top').offset().top
+    })
+  })
  
 
 })

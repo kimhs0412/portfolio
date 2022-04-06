@@ -18,7 +18,7 @@ body {font-size: 15px;color: #666;font-family: 'Montserrat','Noto Sans KR','ë§‘ì
 .skip_nav a:focus {top: 0;}
 
 /*Default*/
-header {background: var(--green);height: 85px;position: relative;}
+header {background: var(--green);position: relative;}
 header .all {
     display: none;
 }
@@ -41,7 +41,7 @@ h1 a {
 
 .visual_wrap {
     height: 844px;
-    background: url(../img/visual1.jpg) no-repeat center;
+    background: url(../img/visual1.jpg) no-repeat center;    
 }
 
 .menu_control {
@@ -174,7 +174,7 @@ footer p.addr {
         display: none;
     }
 
-    header {}
+    header {height: 85px;}
 
     
     h1 {
@@ -190,7 +190,7 @@ footer p.addr {
         float:right;margin-top: 30px;
     }
 
-    .util .allmenu_wrap {
+    /* .util .allmenu_wrap {
         float: right;
     }
 
@@ -200,7 +200,7 @@ footer p.addr {
         background-repeat: no-repeat;
         background-size:contain;
         margin-left: 15px;
-    }
+    } */
 
     .util .search_wrap {
         float: right;
@@ -234,6 +234,13 @@ footer p.addr {
         position: absolute;left: 0;right: 0;top: 85px;height: 270px;background: #FFF;
     }  
     
+   
+
+
+
+
+
+
     .more {
         margin-bottom: 20px;
     }
@@ -494,7 +501,7 @@ footer p.addr {
     }
 
     header {
-        height:22px;padding:21px 0 15px 0;
+        height:22px;padding:21px 0 15px 0;        
     }
 
     h1 a {
@@ -508,11 +515,12 @@ footer p.addr {
     }
 
     .util {
-        float:none;
+        
     }
 
     .util .allmenu_wrap {
-        float: right;
+        float: right;text-align: right;
+                
     }
 
     .util .allmenu_wrap .allmenu {        
@@ -522,6 +530,54 @@ footer p.addr {
         background-size:contain;
 
     }
+
+   
+    .all {        
+        background-color: #FFF;        
+        text-align: center;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 1.2em;vertical-align: top; 
+        margin-top: 36px;
+        padding-bottom: 20px;  
+        
+    }
+
+    .all .a1 {        
+        display: inline-block;
+        margin-top: 20px;
+            
+    }
+
+    .all .a1>li {
+        color:var(--green);
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-top: 20px;               
+        line-height: 25px;
+              
+    }
+
+    .all .a1>li:last-child {
+        margin-right: 0;
+    }
+
+    .all .a1>li>a {
+        display: block;
+        border-bottom: 1px solid var(--green);              
+              
+    }
+
+    .all .a1>li .a2 {
+        margin-top: 15px;
+    }
+
+    .all .a1>li .a2 li {
+        
+    }
+    
+   
 
     .util .search_wrap {
         float:left;
