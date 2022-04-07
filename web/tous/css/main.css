@@ -531,50 +531,60 @@ footer p.addr {
 
     }
 
+    .util .allmenu_wrap .close {
+        display: none;        
+        width: 25px;height: 25px;
+        background-image: url(../img/xmark.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+
    
     .all {        
         background-color: #FFF;        
-        text-align: center;
+        text-align: left;
         display: inline-block;
         font-size: 17px;
         line-height: 1.2em;vertical-align: top; 
         margin-top: 36px;
-        padding-bottom: 20px;  
+        padding-top:5px;
+        padding-bottom: 5px;
         
     }
 
     .all .a1 {        
-        display: inline-block;
+        display: block;
         margin-top: 20px;
-            
+        
     }
 
     .all .a1>li {
         color:var(--green);
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 20px;
-        margin-top: 20px;               
-        line-height: 25px;
-              
+        display: block;
+        vertical-align: top;        
+        margin : 20px 20px 0 20px;         
+        line-height: 25px;  
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999;                       
     }
 
     .all .a1>li:last-child {
-        margin-right: 0;
+        border-bottom: none;
     }
 
     .all .a1>li>a {
-        display: block;
-        border-bottom: 1px solid var(--green);              
+        display: block;             
               
     }
 
     .all .a1>li .a2 {
-        margin-top: 15px;
+        display: none;
+        padding:0 15px;        
     }
 
-    .all .a1>li .a2 li {
-        
+    .all .a1>li .a2>li {
+        padding: 10px 0;
+        border-bottom: 1px solid #999;
     }
     
    

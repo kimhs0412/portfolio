@@ -1,8 +1,4 @@
 $(function() {
-   //particle
-  
-   //particle
-
    $(window).scroll(function() {
       if($(window).scrollTop() >= $('#about_wrap').offset().top) {
         $('body').addClass('onbg')
@@ -29,9 +25,39 @@ $(function() {
       })
     })
 
-    $('.util_wrap .util li').click(function() {
-       $(this).addClass('on')
-       $('.util_wrap .util li').not(this).removeClass('on');
+   //  $('.util_wrap .util li').click(function() {   
+   //     $(this).addClass('on')
+   //     $('.util_wrap .util li').not(this).removeClass('on');
+   //  })
+
+    $(window).scroll(function() {
+      var w = $(window).scrollTop();
+      var w1 = $('#home_wrap').offset().top;
+      var w2 = $('#about_wrap').offset().top;
+      var w3 = $('#skills_wrap').offset().top;
+      var w4 = $('#portfolio_wrap').offset().top;
+
+      if(w < w2) {
+         $('.util_wrap .util .home').addClass('on');
+         $('.util_wrap .util .about').removeClass('on');
+         $('.util_wrap .util .skills').removeClass('on');
+         $('.util_wrap .util .portfolio').removeClass('on');
+      } else if (w >= w2 && w < w3) {
+         $('.util_wrap .util .about').addClass('on');
+         $('.util_wrap .util .home').removeClass('on');
+         $('.util_wrap .util .skills').removeClass('on');
+         $('.util_wrap .util .portfolio').removeClass('on');
+      } else if (w >= w3 && w < w4) {
+         $('.util_wrap .util .skills').addClass('on');
+         $('.util_wrap .util .home').removeClass('on');
+         $('.util_wrap .util .about').removeClass('on');
+         $('.util_wrap .util .portfolio').removeClass('on');
+      } else {
+         $('.util_wrap .util .portfolio').addClass('on');
+         $('.util_wrap .util .home').removeClass('on');
+         $('.util_wrap .util .about').removeClass('on');
+         $('.util_wrap .util .skills').removeClass('on');
+      }
     })
 
 
@@ -140,14 +166,19 @@ $(function() {
 
    //skills
 
-   
+   //progress bar control
+   $(window).scroll(function (event, delta) {
 
+      var scrT = $(this).scrollTop()
+      
+      // progress bar 스크롤제어 if문
+      
+      var secT = $('#skills_wrap').offset().top - 600
+      var secF = $('#portfolio_wrap').offset().top - 1400
 
-
-
-
-   //progress bar
-   $('.chart1').circleProgress({
+      if (scrT >= secT && scrT < secF) {
+         //progress bar
+     $('.chart1').circleProgress({
       size:100,
       //그래프 크기
       startAngle: -Math.PI/2 ,
@@ -160,12 +191,13 @@ $(function() {
       //그래프가 그려지는 애니메이션 동작 여부
       fill: {gradient: ['#e54d26', '#f8632b']},
       emptyFill: "rgba(0,0,0,0.3)",
-    }).on('circle-animation-progress',          
-         function(event, progress, stepValue) {      
+   }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
       $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-      });
+      })
+    
       
-    $('.chart2').circleProgress({
+   $('.chart2').circleProgress({
       size:100,
       //그래프 크기
       startAngle: -Math.PI/2 ,
@@ -178,11 +210,11 @@ $(function() {
       //그래프가 그려지는 애니메이션 동작 여부
       fill: {gradient: ['#046fb7', '#28abe1']},
       emptyFill: "rgba(0,0,0,0.3)",
-    }).on('circle-animation-progress',           
-         function(event, progress, stepValue) {      
+   }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
       $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-      });
-  
+   })
+
    $('.chart3').circleProgress({
          size:100,
          //그래프 크기
@@ -196,10 +228,10 @@ $(function() {
          //그래프가 그려지는 애니메이션 동작 여부
          fill: {gradient: ['#e9ca34', '#fede27']},
          emptyFill: "rgba(0,0,0,0.3)",
-      }).on('circle-animation-progress',           
-            function(event, progress, stepValue) {      
-         $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-         });
+      }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
+      $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+      })
 
    $('.chart4').circleProgress({
          size:100,
@@ -214,11 +246,10 @@ $(function() {
          //그래프가 그려지는 애니메이션 동작 여부
          fill: {gradient: ['#0968ac', '#076cb0']},
          emptyFill: "rgba(0,0,0,0.3)",
-      }).on('circle-animation-progress',           
-            function(event, progress, stepValue) {      
+      }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
          $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-         });
-         
+      })
 
       $('.chart5').circleProgress({
             size:100,
@@ -233,11 +264,10 @@ $(function() {
             //그래프가 그려지는 애니메이션 동작 여부
             fill: {gradient: ['#20d3f1', '#161324']},
             emptyFill: "rgba(0,0,0,0.3)",
-         }).on('circle-animation-progress',           
-               function(event, progress, stepValue) {      
-            $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-            });         
-  
+         }).on('circle-animation-progress',          
+         function(event, progress, stepValue) {      
+            $(this).find('strong').text(stepValue.toFixed(2).substr(1));     
+         })
 
       $('.chart6').circleProgress({
                size:100,
@@ -252,20 +282,143 @@ $(function() {
                //그래프가 그려지는 애니메이션 동작 여부
                fill: {gradient: ['#ff7f1e', '#1c0a00']},
                emptyFill: "rgba(0,0,0,0.3)",
-            }).on('circle-animation-progress',           
-                  function(event, progress, stepValue) {      
-               $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-               });            
- 
-  
-    // Let's emulate dynamic value update
-   //  setTimeout(function() { c4.circleProgress('value', 0.7); }, 1000);
-   //  setTimeout(function() { c4.circleProgress('value', 1.0); }, 1100);
-   //  setTimeout(function() { c4.circleProgress('value', 0.5); }, 2100);
-   //progress bar
+            }).on('circle-animation-progress',          
+            function(event, progress, stepValue) {      
+               $(this).find('strong').text(stepValue.toFixed(2).substr(1));          
+            })
+
+// Let's emulate dynamic value update
+//  setTimeout(function() { c4.circleProgress('value', 0.7); }, 1000);
+//  setTimeout(function() { c4.circleProgress('value', 1.0); }, 1100);
+//  setTimeout(function() { c4.circleProgress('value', 0.5); }, 2100);
+//progress bar         
+      } else {
+             //progress bar
+     $('.chart1').circleProgress({
+      size:100,
+      //그래프 크기
+      startAngle: -Math.PI/2 ,
+      //시작지점 (기본값 Math.PI)
+      value: 0.7,
+      //그래프에 표시될 값 
+      thickness:10,
+      lineCap:'round',
+      animation: false,
+      //그래프가 그려지는 애니메이션 동작 여부
+      fill: {gradient: ['#e54d26', '#f8632b']},
+      emptyFill: "rgba(0,0,0,0.3)",
+   }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
+      $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+      })
+    
+      
+   $('.chart2').circleProgress({
+      size:100,
+      //그래프 크기
+      startAngle: -Math.PI/2 ,
+      //시작지점 (기본값 Math.PI)
+      value: 0.5,
+      //그래프에 표시될 값 
+      thickness:10,
+      lineCap:'round',
+      animation: false,
+      //그래프가 그려지는 애니메이션 동작 여부
+      fill: {gradient: ['#046fb7', '#28abe1']},
+      emptyFill: "rgba(0,0,0,0.3)",
+   }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
+      $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+   })
+
+   $('.chart3').circleProgress({
+         size:100,
+         //그래프 크기
+         startAngle: -Math.PI/2 ,
+         //시작지점 (기본값 Math.PI)
+         value: 0.5,
+         //그래프에 표시될 값 
+         thickness:10,
+         lineCap:'round',
+         animation: false,
+         //그래프가 그려지는 애니메이션 동작 여부
+         fill: {gradient: ['#e9ca34', '#fede27']},
+         emptyFill: "rgba(0,0,0,0.3)",
+      }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
+      $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+      })
+
+   $('.chart4').circleProgress({
+         size:100,
+         //그래프 크기
+         startAngle: -Math.PI/2 ,
+         //시작지점 (기본값 Math.PI)
+         value: 0.5,
+         //그래프에 표시될 값 
+         thickness:10,
+         lineCap:'round',
+         animation: false,
+         //그래프가 그려지는 애니메이션 동작 여부
+         fill: {gradient: ['#0968ac', '#076cb0']},
+         emptyFill: "rgba(0,0,0,0.3)",
+      }).on('circle-animation-progress',          
+      function(event, progress, stepValue) {      
+         $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+      })
+
+      $('.chart5').circleProgress({
+            size:100,
+            //그래프 크기
+            startAngle: -Math.PI/2 ,
+            //시작지점 (기본값 Math.PI)
+            value: 0.5,
+            //그래프에 표시될 값 
+            thickness:10,
+            lineCap:'round',
+            animation: false,
+            //그래프가 그려지는 애니메이션 동작 여부
+            fill: {gradient: ['#20d3f1', '#161324']},
+            emptyFill: "rgba(0,0,0,0.3)",
+         }).on('circle-animation-progress',          
+         function(event, progress, stepValue) {      
+            $(this).find('strong').text(stepValue.toFixed(2).substr(1));     
+         })
+
+      $('.chart6').circleProgress({
+               size:100,
+               //그래프 크기
+               startAngle: -Math.PI/2 ,
+               //시작지점 (기본값 Math.PI)
+               value: 0.5,
+               //그래프에 표시될 값 
+               thickness:10,
+               lineCap:'round',
+               animation: false,
+               //그래프가 그려지는 애니메이션 동작 여부
+               fill: {gradient: ['#ff7f1e', '#1c0a00']},
+               emptyFill: "rgba(0,0,0,0.3)",
+            }).on('circle-animation-progress',          
+            function(event, progress, stepValue) {      
+               $(this).find('strong').text(stepValue.toFixed(2).substr(1));          
+            })
+
+// Let's emulate dynamic value update
+//  setTimeout(function() { c4.circleProgress('value', 0.7); }, 1000);
+//  setTimeout(function() { c4.circleProgress('value', 1.0); }, 1100);
+//  setTimeout(function() { c4.circleProgress('value', 0.5); }, 2100);
+//progress bar 
+
+
+      }
+   })
+    
+
+ //progress bar control
 
 
 
+   
 
 
 
@@ -320,6 +473,8 @@ $(function() {
            scrollTop : $('.top').offset().top
          })
        })
+
+       
 
 
 
