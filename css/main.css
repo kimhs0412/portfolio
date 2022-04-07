@@ -544,7 +544,7 @@ header.bg_on .util li {color: #000;transition: all 0.3s}
 
 .photo_wrap {
     float: left;
-    background-image : url(../img/temporary.jpg);
+    background-image : url(../img/photo.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 150px;height: 300px;
@@ -567,6 +567,7 @@ header.bg_on .util li {color: #000;transition: all 0.3s}
 /*Skills*/
 #skills_wrap {
     padding-top: 100px;
+   
     
 }
 
@@ -637,6 +638,8 @@ header.bg_on .util li {color: #000;transition: all 0.3s}
 
 #portfolio_wrap {
     margin-top: 400px;
+   
+   
 }
 
 
